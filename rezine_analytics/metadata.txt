@@ -1,0 +1,6 @@
+Name: Rezine / Google Analytics
+Plugin URL: https://github.com/rockyburt/rezine_analytics
+Author: Rocky Burt <rocky@serverzen.com>
+Author URL: http://www.serverzen.net
+License: BSD
+Description: A Google Analytics plugin for Rezine

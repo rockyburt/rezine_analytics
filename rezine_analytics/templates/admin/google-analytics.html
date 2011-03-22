@@ -1,0 +1,17 @@
+{% extends "admin/layout.html" %}
+{% block title %}{{ _("Google Analytics Configuration") }}{% endblock %}
+{% block contents %}
+  <h1>{{ _("Google Analytics Configuration") }}</h1>
+  <p>{% trans api_link='http://wordpress.com/api-keys/' %}
+    Google Analytics will help you analyze all traffic going to the blog.
+    If you don't have a Google Analytics account setup, please
+    visit <a href="http://www.google.com/analytics/">Google Analytics</a> first.
+  {% endtrans %}</p>
+  <h2>Account Id</h2>
+  {%- call form() %}
+    <p>{{ form.account() }}</p>
+    <div class="actions">
+      <input type="submit" value="{{ _('Update Account Id') }}">
+    </div>
+  {%- endcall %}
+{% endblock %}
